@@ -9,6 +9,6 @@ const people = [
 ]
 const element = React.createElement('ul', null ,
 people.map((person) => (
-React.createElement('li', null , person.name))))
+React.createElement('li', {key : person.name} , person.name))))
 
 ReactDOM.render(element, document.getElementById('root'))
